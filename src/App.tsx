@@ -4,11 +4,11 @@ import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupsPage from "./pages/NewMeetup";
 import Favourites from "./pages/Favourites";
 import MainNavigation from "./components/layout/MainNavigation";
+import Layout from './components/layout/Layout'
 
 function App(): JSX.Element {
   return (
-    <div>
-      <MainNavigation />
+    <Layout>
       <Switch>
         <Route path="/" exact>
           <AllMeetupsPage />
@@ -20,7 +20,7 @@ function App(): JSX.Element {
           <Favourites />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 }
 
