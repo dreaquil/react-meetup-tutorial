@@ -1,6 +1,7 @@
 import classes from "./MeetupItem.module.css";
 
 interface Props {
+  id: string;
   image: string;
   title: string;
   address: string;
